@@ -1,8 +1,6 @@
 {
-	"name": "test",
+	"name": "lefthoook-biome-verification",
 	"version": "1.0.0",
-	"description": "",
-	"main": "index.js",
 	"scripts": {
 		"check": "biome check .",
 		"check2": "biome check --fix --unsafe .",
@@ -11,9 +9,6 @@
 		"lefthook": "lefthook install"
 	},
 	"keywords": [],
-	"author": "",
-	"license": "ISC",
-	"type": "commonjs",
 	"devDependencies": {
 		"@biomejs/biome": "^2.1.2",
 		"lefthook": "^1.12.2"
