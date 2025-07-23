@@ -3,12 +3,13 @@ pre-commit:
   commands:
     biome-check:
       glob: "*.{js,ts,jsx,tsx,json}"
+      exclude: ".claude/**/*"
       run: npx biome check {staged_files} > /dev/null 2>&1 || (echo "Biome check failed!" && npx biome check {staged_files})
       stage_fixed: true
 
 pre-push:
   commands:
     biome-ci:
-      run: npx biome ci
+      run: npx biome ci --files-ignore-unknown=true
 
 output: false
