@@ -10,6 +10,6 @@ pre-commit:
 pre-push:
   commands:
     biome-ci:
-      run: npx biome ci --files-ignore-unknown=true
+      run: npx biome ci --files-ignore-unknown=true src/
 
 output: false
